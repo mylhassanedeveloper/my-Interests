@@ -1,9 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(20, 51, 51);
 }
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
+  z-index: -1;
   position: fixed;
   right: 0;
   /* margin: auto; */
@@ -22,7 +24,7 @@ body {
 .content {
   position: fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -30,6 +32,82 @@ body {
 }
 /* Style the button used to pause/play the video */
 #myBtn:hover {
-  background: #ddd;
+  /* background: #ddd; */
   color: black;
+}
+/* 
+#codding {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(221, 221, 221, 0.179);
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.item1 { grid-area: left-top; }
+.item2 { grid-area: right-top; }
+.item3 { grid-area: left-buttom; }
+.item3 { grid-area: right-buttom; }
+
+.grid-container {
+  right: 0px;
+  /* margin: auto; */
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 11;
+  display: grid;
+  grid-template-areas:
+    'left-top right-top'
+    'left-buttom right-buttom';
+  gap: 10px;
+  /* background-color: #2195f341; */
+  padding: 10px;
+}
+
+.grid-container > button {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 250px;
+}
+.grid-container > button:hover {
+  background-color: rgba(0, 0, 0, 0.457);
+  min-width: 80%;
+  min-height: 80%;
+  border-radius: 250px;
+}
+img {
+  zoom: 2;
+}
+.glow {
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.408);
+  text-align: center;
+  animation: glow 0.3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(3, 110, 10, 0.104), 0 0 70px #00e63da1;
+  }
+  
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.235), 0 0 30px #290beb;
+  }
 }

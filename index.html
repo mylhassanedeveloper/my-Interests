@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video Background</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="typing.css"  media="screen">
+  <script src="script.js"></script>
 </head>
+
 <body>
   <!-- The video -->
   <video autoplay muted loop id="myVideo">
     <source src="beauty-of-waterfalls.mp4" type="video/mp4">
   </video>
 
-  <!-- Optional: some overlay text to describe the video -->
+  <div class="grid-container">
+    <button class="item1">
+      <img src="logos/visual-studio-code-icons/vscode.png" width="150" height="" alt="">
+        <p class="glow">Codding</p>
+    </button>
+
+    <button class="item2">
+      <img src="logos/video-editing.png" width="150" height="" alt="">
+      <p class="glow">Editing</p>
+    </button>
+
+    <button class="item3">
+      <img src="logos/arduino.png" width="150" height="" alt="">
+      <p class="glow">arduino</p>
+    </button>
+
+    <button class="item4">
+      <img src="logos/3d.png" width="150" height="" alt="">
+      <p class="glow">3d</p>
+    </button>
+  </div>
+
   <div class="content">
     <h1>Heading</h1>
     <p>Lorem ipsom...</p>
     <!-- Use a button to pause/play the video with JavaScript -->
     <button id="myBtn" onclick="myFunction()">Pause</button>
   </div>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </body>
+<script src="typing-codding.js"></script>
+<script src="typing-editing.js"></script>
 </html>
